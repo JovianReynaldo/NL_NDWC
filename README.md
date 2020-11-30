@@ -2,6 +2,6 @@
 
 fitur web: ada animasi, responsive
 
-Preview here https://jovianreynaldo.github.io/NL_NDWC/
+<a href="https://jovianreynaldo.github.io/NL_NDWC/" target="_blank"> click here for preview </a>
 
 <pre> By Alphonsus Jovian Joy Reynaldo </pre>
