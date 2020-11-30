@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body{
+    background-color: #271f4f;
+    /* #171233 ,  #271f4f, #3b3170, #6659a5, #9d8ec4, #bea9d7 */
+}
+
+@media (max-width: 500px){
+    body{
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+}
+
+a, a:hover, h1{
+    color: white;
+}
+
+.welcome{
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    font-size: 0;
+    color: white;
+    font-family: 'Nerko One';
+    transition: 1s;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.content{
+    display:none;
+}
+
+.header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1%;
+    /* border: 5px solid #bea9d7; */
+    background-color: rgba(59,49,112, 1);
+}
+
+.nav-tabs{
+    border: 0;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    border: 1px solid transparent;
+    border-top-left-radius: 0; 
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link.active{
+    border: 0;
+    background-color: #bea9d7;
+    border-radius: 10%;
+}
+
+.profil, .frontend, .backend, .about{
+    margin-top: 10%;
+}
+
+.profil-text, .frontend-text, .backend-text{  
+    text-align: justify;
+    color: white;
+    font-family: 'calibri';
+    font-size: 1.3rem;
+    line-height: 2;
+}
+
+.profil-img, .frontend-img, .backend-img{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+
+.profil img{
+    max-width: 200px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 1%;
+}
+
+.frontend img, .backend img{
+    width: 200px;
+}
+
+.techstack{
+    margin-top: 10%;
+    transition: 1s;
+}
+
+.techstack-img{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.techstack img{
+    max-width: 150px;
+    border: 3px solid white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 1%;
+}
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3b3170;
+    padding: 1%;
+    color: white;
+    text-align: center;
+    margin: 0;
+    display: grid;
+    place-items: center;
+ } 
+
+ .footer  i{
+    font-size: 1rem;
+}
+
+.dummy{
+    background-color: #171233;
+    background-color: #271f4f;
+    background-color: #3b3170;
+    background-color: #6659a5;
+    background-color: #9d8ec4;
+    background-color: #bea9d7;
+
+}
+
+/* menu dropdown */
+.dropdown-toggle{
+    width: 100%;
+    background-color: #3b3170;
+    color: white;
+    font-weight: bold;
+}
+
+.dropdown-menu, .dropdown-item{
+    width: 100%;
+    background-color: #9d8ec4;
+    color: white;
+    font-weight: bold;
+}
+
+.show>.btn-secondary.dropdown-toggle { 
+    background-color: #6659a5;
+}
+
+.dropdown-toggle:hover{
+    background-color: #6659a5;
+}
+
+.dropdown-item:hover{
+    background-color: #bea9d7;
+}
