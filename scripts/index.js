@@ -85,7 +85,7 @@ window.setInterval(function(){
     count++;
     console.log(count);
     if(count==4) count = 1;
-}, 3000);
+}, 2000);
 
 
 
