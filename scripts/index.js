@@ -1,15 +1,16 @@
 $('#content-body').load('pages/home.html');   
 
-if( $(window).width() < 500){
-    $(".welcome").css("fontSize", "4rem");
-    
+if( $(window).width() < 600){
     setTimeout(() => {
-        $(".welcome").css("fontSize", 0);
-        setTimeout(() =>{
-            $(".welcome").hide(); 
-            $('.content').show('slow');
-        },1000);
-    },2500);
+        $(".welcome").css("fontSize", "4rem");
+        setTimeout(() => {
+            $(".welcome").css("fontSize", 0);
+            setTimeout(() =>{
+                $(".welcome").hide(); 
+                $('.content').show('slow');
+            },1000);
+        },2500);
+    },1000);
 
     $(".header").html('\
     <div class="container">\
@@ -26,15 +27,19 @@ if( $(window).width() < 500){
         </div>\
     </div>');
 } else {
-    $(".welcome").css("fontSize", "10rem");
 
+    
     setTimeout(() => {
-        $(".welcome").css("fontSize", 0);
-        setTimeout(() =>{
-            $(".welcome").hide(); 
-            $('.content').show('slow');
-        },1000);
-    },2500);
+        $(".welcome").css("fontSize", "10rem");
+
+        setTimeout(() => {
+            $(".welcome").css("fontSize", 0);
+            setTimeout(() =>{
+                $(".welcome").hide(); 
+                $('.content').show('slow');
+            },1000);
+        },2500);
+    },1000);
 }
 
 
